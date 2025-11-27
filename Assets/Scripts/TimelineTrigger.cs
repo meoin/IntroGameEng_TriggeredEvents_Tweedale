@@ -9,7 +9,7 @@ public class TimelineTrigger : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Something has entered the trigger");
-        if (other.tag == tagToTrigger) //The colliding object isn't our object
+        if (other.tag == tagToTrigger)
         {
             Debug.Log("Player is in the trigger zone");
             timeline.Play();
