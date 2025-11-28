@@ -10597,7 +10597,7 @@ PrefabInstance:
     - target: {fileID: 2155358169863565892, guid: e0a781c065b735b41a847089a684852f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.57
+      value: -43.515
       objectReference: {fileID: 0}
     - target: {fileID: 2155358169863565892, guid: e0a781c065b735b41a847089a684852f,
         type: 3}
@@ -10607,7 +10607,7 @@ PrefabInstance:
     - target: {fileID: 2155358169863565892, guid: e0a781c065b735b41a847089a684852f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.3
+      value: -11.145
       objectReference: {fileID: 0}
     - target: {fileID: 2155358169863565892, guid: e0a781c065b735b41a847089a684852f,
         type: 3}
@@ -33307,7 +33307,7 @@ GameObject:
   - component: {fileID: 1063345919}
   - component: {fileID: 1063345918}
   m_Layer: 0
-  m_Name: CutsceneManager02
+  m_Name: EndingCutsceneManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33322,12 +33322,20 @@ PlayableDirector:
   m_GameObject: {fileID: 1063345917}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
+  m_PlayableAsset: {fileID: 11400000, guid: 809780bff140d584aacd88db66c07dd5, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
-  m_SceneBindings: []
+  m_SceneBindings:
+  - key: {fileID: -7362969584325497659, guid: 809780bff140d584aacd88db66c07dd5, type: 2}
+    value: {fileID: 1830205644}
+  - key: {fileID: 3087653830316904512, guid: 809780bff140d584aacd88db66c07dd5, type: 2}
+    value: {fileID: 1830205643}
+  - key: {fileID: -7607209956383959553, guid: 809780bff140d584aacd88db66c07dd5, type: 2}
+    value: {fileID: 1536304293}
+  - key: {fileID: 3087358775246681039, guid: 809780bff140d584aacd88db66c07dd5, type: 2}
+    value: {fileID: 2139651057}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1063345919
@@ -46829,7 +46837,7 @@ GameObject:
   - component: {fileID: 1830205645}
   - component: {fileID: 1830205644}
   m_Layer: 0
-  m_Name: IntroCamera
+  m_Name: CutsceneCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46918,8 +46926,8 @@ Camera:
   m_GameObject: {fileID: 1830205643}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -46974,7 +46982,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 357.4258, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 359.7833, z: 0}
 --- !u!4 &1832500288 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7798614872579326406, guid: 2cf99f19e852481429afd4e69a6d229e,
@@ -51956,6 +51964,10 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5023021075185555319, guid: 8f6e2366d33500244a251b910d0a07f7,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2139651057}
     - targetCorrespondingSourceObject: {fileID: 9192193951197784397, guid: 8f6e2366d33500244a251b910d0a07f7,
         type: 3}
       insertIndex: -1
@@ -51967,6 +51979,34 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2139651054}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2139651056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5023021075185555319, guid: 8f6e2366d33500244a251b910d0a07f7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2139651054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2139651057
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139651056}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &2145601474
 PrefabInstance:
   m_ObjectHideFlags: 0
