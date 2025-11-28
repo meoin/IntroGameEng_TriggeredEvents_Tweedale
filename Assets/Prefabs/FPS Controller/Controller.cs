@@ -165,4 +165,9 @@ public class Controller : MonoBehaviour
         }
 
     }
+
+    public void ExitGame() 
+    {
+        Application.Quit();
+    }
 }
